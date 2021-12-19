@@ -14,16 +14,22 @@
     "removeComments": false,
     "strict": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noImplicitAny": false,
     "noImplicitThis": false,
     "noEmit": true,
     "experimentalDecorators": true,
     "useDefineForClassFields": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+    }
   },
-  "include": ["src", "__tests__"],
+  "include": [
+    "src"
+  ],
   "exclude": [
-    "__tests__"
+    "**/__tests__/**"
   ]
 }

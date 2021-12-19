@@ -20,5 +20,6 @@ module.exports = {
     "jest"
   ],
   "rules": {
+   "@typescript-eslint/no-explicit-any":'off'
   }
 };
